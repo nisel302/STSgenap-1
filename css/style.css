@@ -298,3 +298,55 @@ footer {
     padding: 40px;
     color: #94a3b8;
 }
+/* ==========================================
+   TAMBAHAN KODE RESPONSIF (PALING BAWAH)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+        flex-direction: column; /* Menu & Jam menumpuk di HP */
+        height: auto;
+    }
+
+    .nav-links {
+        margin: 10px 0;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .clock-box {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .feature-box, .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .card1, .form-box, table {
+        width: 100%; /* Lebar penuh di HP */
+    }
+
+    /* Agar tabel bisa di-scroll ke samping di layar kecil */
+    section {
+        overflow-x: auto;
+    }
+
+    table {
+        font-size: 12px; /* Font tabel diperkecil */
+    }
+}
